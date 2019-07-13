@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=number], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=email], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        input[type=date], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=password], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+        </style>
+    <body>
+        <div id='student registration'>
+            <img src="images/cu.png" style="width:100px;height:100px;" class="center"></img>
+                <h1 style="text-align: center; color: #45a049">Student Registration</h1>
+	
+            <label>Name: </label><input type='text' id='name' name="name" required></input>
+            <label>Date of Birth(MM/DD/YYYY): </label><input type='date' id='dob' name="dob" required></input>
+            <br>
+            <label>Department:</label><select id="department"></select>
+            <label>Programme:</label><select id="program"></select>
+
+            <label>Address:</label><input type="text" name="address" id="address" required></input>
+            <label>E-mail:</label><input type="email" name="email" id="email" required></input>
+            <label>Password:</label><input type="password" name="password" id="password" required></input>
+            <label>Mobile No:-</label><input type="number" name="mobile" id="mobile" required></input>
+            <button class="btn btn-default btn-adopt" type="button" data-id="0" style="background-color: #45a049;width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;">Register</button>
+            <p id="disp">Name:</p>
+            
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/student_register.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
